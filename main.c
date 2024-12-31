@@ -1,11 +1,18 @@
 #include <stdio.h>
 
 
-int main() {
+
+
+int main(int argc, char *argv[]) {
 
 
 
+	//argc is inclusive of the program itself + all the commands 
+	//start at index 1 since index 0 is the program itself
+	for (int i = 1; i < argc ; i++) {
 
+		printf("Arguments:  %s\n", argv[i]);
+	}
 
 	return 0;
 }
